@@ -1,6 +1,6 @@
 buildscript {
 
-    val kotlin_version = "1.1.2"
+    val kotlin_version = "1.1.2-4"
 
     repositories {
         mavenCentral()
@@ -10,20 +10,17 @@ buildscript {
     dependencies {
         classpath(kotlinModule("gradle-plugin"))
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        
     }
 
 }
 
 plugins {
-    application
 }
 
 apply {
+    plugin("idea")
     plugin("kotlin")
-}
-
-application {
-    mainClassName = "samples.HelloWorldKt"
 }
 
 repositories {
@@ -32,4 +29,7 @@ repositories {
 
 dependencies {
     compile(kotlinModule("stdlib"))
+    testCompile(group = "junit", name = "junit", version = "4.12")
+
+
 }
