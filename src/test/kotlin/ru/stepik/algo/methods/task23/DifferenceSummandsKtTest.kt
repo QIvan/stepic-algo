@@ -1,4 +1,4 @@
-package ru.stepik.algo.methods.greedy
+package ru.stepik.algo.methods.task23
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
