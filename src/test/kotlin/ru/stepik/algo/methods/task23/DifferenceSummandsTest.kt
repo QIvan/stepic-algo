@@ -6,7 +6,7 @@ import org.junit.Test
 /**
  * @author Ivan Zemlyanskiy
  */
-class DifferenceSummandsKtTest {
+class DifferenceSummandsTest {
     @Test
     fun differenceSummandsTest() {
         assertEquals(Result(2, 3), differenceSummands(6))
