@@ -5,7 +5,11 @@ import java.util.*
 data class Segment(val start: Int, val end: Int) {
 
     fun pointInside(point: Int?): Boolean {
-        return point in start..end
+        if (point != null) {
+            return start <= point && point <= end
+        } else {
+            return false
+        }
     }
 }
 

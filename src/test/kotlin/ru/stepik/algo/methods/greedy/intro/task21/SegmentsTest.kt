@@ -3,17 +3,12 @@ package ru.stepik.algo.methods.greedy.intro.task21
 import org.junit.Test
 
 import org.junit.Assert.*
+import java.util.*
 
 /**
  * @author Ivan Zemlyanskiy
  */
 class SegmentsTest {
-
-    @Test
-    fun name() {
-        assertTrue(Segment(0, 10).pointInside(5))
-
-    }
 
     @Test
     fun findPointsForSegmentsSampleInput1() {
@@ -37,4 +32,16 @@ class SegmentsTest {
 
         assertEquals(listOf(3, 6), findPointsForSegments(testData))
     }
+
+    @Test
+    fun findPointsForSegmentsBigInput() {
+        val random = Random()
+        val testData = arrayListOf<Segment>()
+        for (i in 1..100) {
+            testData.add(Segment(random.nextInt(Int.MAX_VALUE), random.nextInt(Int.MAX_VALUE)))
+        }
+
+        assertTrue(findPointsForSegments(testData).isNotEmpty())
+    }
+
 }
