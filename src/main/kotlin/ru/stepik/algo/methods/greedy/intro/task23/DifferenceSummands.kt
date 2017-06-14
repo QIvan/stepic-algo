@@ -1,4 +1,4 @@
-package ru.stepik.algo.methods.task23
+package ru.stepik.algo.methods.greedy.intro.task23
 
 import java.util.*
 

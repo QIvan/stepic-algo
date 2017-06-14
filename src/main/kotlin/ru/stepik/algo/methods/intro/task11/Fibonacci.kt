@@ -1,4 +1,4 @@
-package ru.stepik.algo.intro.task11
+package ru.stepik.algo.methods.intro.task11
 
 import java.util.*
 

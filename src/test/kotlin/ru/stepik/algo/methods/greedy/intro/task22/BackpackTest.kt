@@ -1,4 +1,4 @@
-package ru.stepik.algo.methods.task22
+package ru.stepik.algo.methods.greedy.intro.task22
 
 import org.junit.Test
 
