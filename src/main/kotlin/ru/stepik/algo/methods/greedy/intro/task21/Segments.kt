@@ -27,8 +27,13 @@ fun main(args: Array<String>): Unit {
     val scanner = Scanner(System.`in`)
     val n = scanner.nextInt()
     val inputSegments = arrayListOf<Segment>()
-    for (i in 0..n) {
+    for (i in 1..n) {
         inputSegments.add(Segment(scanner.nextInt(), scanner.nextInt()))
+    }
+    val points = findPointsForSegments(inputSegments)
+    println(points.size)
+    for (p in points) {
+        print("$p ")
     }
 
 }
