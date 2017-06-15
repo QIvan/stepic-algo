@@ -5,7 +5,6 @@ import java.util.*
 data class Segment(val start: Int, val end: Int) {
 
     fun pointInside(point: Int?): Boolean {
-        //TODO сделать бенчмарк
 //        return point in start..end
         if (point != null) {
             return point in start..end
