@@ -1,35 +1,13 @@
-buildscript {
-
-    val kotlin_version = "1.1.2-4"
-
-    repositories {
-        mavenCentral()
-        gradleScriptKotlin()
-    }
-
-    dependencies {
-        classpath(kotlinModule("gradle-plugin"))
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
-        
-    }
-
-}
-
 plugins {
-}
+    kotlin("jvm") version "1.3.71"
 
-apply {
-    plugin("idea")
-    plugin("kotlin")
-}
-
-repositories {
-    gradleScriptKotlin()
 }
 
 dependencies {
-    compile(kotlinModule("stdlib"))
+    compile(kotlin("stdlib"))
     testCompile(group = "junit", name = "junit", version = "4.12")
+}
 
-
+repositories {
+    jcenter()
 }

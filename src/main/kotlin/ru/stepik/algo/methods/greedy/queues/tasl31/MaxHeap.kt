@@ -11,7 +11,7 @@ enum class Operation {
 }
 
 class MaxHeap(n: Int) {
-    val queue: IntArray = IntArray(n)
+    private val queue: IntArray = IntArray(n)
     var lastIndex = -1
 
     fun insert(value: Int) {
